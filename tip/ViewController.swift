@@ -14,8 +14,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var billAmountTextField: UITextField!
+    
+    var tipControlDefault = 0
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false);
+        let defaults = UserDefaults.standard
+        let tipValue = defaults.double(forKey: "defaultTip")
+        tipControl.selectedSegmentIndex = Int(tipValue)
+        calculateTip(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.billAmountTextField.becomeFirstResponder()
     }
 
 

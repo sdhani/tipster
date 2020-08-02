@@ -1,6 +1,6 @@
-# Pre-work - *Tips*
+# Pre-work - *Tipster*
 
-**Tips** is a tip calculator application for iOS.
+**Tipster** is a tip calculator application for iOS.
 
 Submitted by: **Shania Dhani**
 

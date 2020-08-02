@@ -15,44 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-SA-5Jl">
-                                <rect key="frame" x="32" y="164" width="23" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Bill">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-5s-QXa">
-                                <rect key="frame" x="32" y="245" width="25" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Tip">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peO-Ga-PUj">
-                                <rect key="frame" x="337" y="245" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-o6-23e">
+                                <rect key="frame" x="32" y="484" width="84" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkQ-z6-CAx">
-                                <rect key="frame" x="337" y="457" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="301.5" y="484" width="80.5" height="28"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tm1-UE-0de">
-                                <rect key="frame" x="32" y="346" width="350" height="32"/>
+                                <rect key="frame" x="32" y="373" width="350" height="32"/>
                                 <color key="backgroundColor" red="0.99794119599999997" green="0.66155523059999999" blue="0.74510115389999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
                                     <segment title="15%"/>
@@ -63,38 +39,51 @@
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hlj-vM-Aks"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dU8-9f-yGX">
-                                <rect key="frame" x="286" y="151" width="96" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dU8-9f-yGX">
+                                <rect key="frame" x="32" y="140" width="350" height="94"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="xoy-uo-RCY"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-o6-23e">
-                                <rect key="frame" x="32" y="457" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peO-Ga-PUj">
+                                <rect key="frame" x="319" y="269.5" width="63" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-5s-QXa">
+                                <rect key="frame" x="32" y="269.5" width="30" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TIP">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HiraginoSans-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.84950882196426392" green="0.74387333241488163" blue="0.82965649436127742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tm1-UE-0de" secondAttribute="trailing" constant="32" id="0rT-1e-9fa"/>
-                            <constraint firstItem="KXp-SA-5Jl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="8Hs-51-RDD"/>
-                            <constraint firstItem="KXp-SA-5Jl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="LUq-e9-OhQ"/>
-                            <constraint firstItem="hbw-5s-QXa" firstAttribute="top" secondItem="KXp-SA-5Jl" secondAttribute="bottom" constant="60" id="WO9-zZ-dTw"/>
-                            <constraint firstItem="tm1-UE-0de" firstAttribute="top" secondItem="peO-Ga-PUj" secondAttribute="bottom" constant="80" id="eos-CK-xP3"/>
-                            <constraint firstItem="dU8-9f-yGX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="g1N-2j-RFn"/>
+                            <constraint firstItem="hbw-5s-QXa" firstAttribute="top" secondItem="dU8-9f-yGX" secondAttribute="bottom" constant="80" id="AHH-8s-ble"/>
+                            <constraint firstItem="hkQ-z6-CAx" firstAttribute="top" secondItem="tm1-UE-0de" secondAttribute="bottom" constant="80" id="Sz3-Vt-cZF"/>
+                            <constraint firstItem="peO-Ga-PUj" firstAttribute="top" secondItem="dU8-9f-yGX" secondAttribute="bottom" constant="80" id="WbW-bP-Zww"/>
+                            <constraint firstItem="dU8-9f-yGX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Zjw-OK-7sa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkQ-z6-CAx" secondAttribute="trailing" constant="32" id="gmJ-TK-ciJ"/>
                             <constraint firstItem="hbw-5s-QXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="iK5-0c-bdV"/>
+                            <constraint firstItem="tm1-UE-0de" firstAttribute="top" secondItem="peO-Ga-PUj" secondAttribute="bottom" constant="80" id="kAt-0f-AIg"/>
                             <constraint firstItem="bb3-o6-23e" firstAttribute="top" secondItem="tm1-UE-0de" secondAttribute="bottom" constant="80" id="lYM-Wd-qh2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dU8-9f-yGX" secondAttribute="trailing" constant="32" id="lii-Q0-qU8"/>
                             <constraint firstItem="bb3-o6-23e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="n3T-eT-kB1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peO-Ga-PUj" secondAttribute="trailing" constant="32" id="opt-zh-rnP"/>
-                            <constraint firstItem="peO-Ga-PUj" firstAttribute="top" secondItem="dU8-9f-yGX" secondAttribute="bottom" constant="60" id="vB7-2G-vnB"/>
-                            <constraint firstItem="hkQ-z6-CAx" firstAttribute="top" secondItem="tm1-UE-0de" secondAttribute="bottom" constant="80" id="yfa-r2-xhl"/>
+                            <constraint firstItem="dU8-9f-yGX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="pWa-pM-rH3"/>
+                            <constraint firstItem="tm1-UE-0de" firstAttribute="top" secondItem="hbw-5s-QXa" secondAttribute="bottom" constant="80" id="z9G-8d-ePa"/>
                             <constraint firstItem="tm1-UE-0de" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="zx0-Wt-acq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -146,15 +135,14 @@
                                     <action selector="changeDefaultTip:" destination="kms-ue-8tQ" eventType="valueChanged" id="YtD-o7-gT8"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Default Percentage" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcS-3V-Khv">
-                                <rect key="frame" x="64" y="262" width="286" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Default Percent" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcS-3V-Khv">
+                                <rect key="frame" x="64" y="262" width="286" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W4" family="Hiragino Sans" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.87025892729999998" green="0.73961728810000005" blue="0.83530443909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dhl-yD-LSp" firstAttribute="top" secondItem="Dh3-iI-KVh" secondAttribute="top" constant="93" id="531-pc-NbB"/>
                             <constraint firstItem="Dh3-iI-KVh" firstAttribute="trailing" secondItem="dhl-yD-LSp" secondAttribute="trailing" constant="32" id="64a-US-jdr"/>

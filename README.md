@@ -33,8 +33,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Challenges:
-
 ## License
 
     Copyright 2020 Shania Dhani
